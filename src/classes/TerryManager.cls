@@ -219,6 +219,14 @@ public with sharing class TerryManager {
 
 	/*
 	* ----- NOTES
-	* TerritoryType DML not alloed.
+	TerritoryType DML not alloed.
+	- SOAP: TM Data Model https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_erd_territory2.htm
+	- TM 2.0 Objects description http://releasenotes.docs.salesforce.com/en-us/summer14/release-notes/rn_api_objects_new.htm#rn_api_objects_new
+	- Assinment Rules cannot be run from Apex:
+	- https://help.salesforce.com/HTViewSolution?id=000004725
+	- Only Case or Lead rules are supported from Apex https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_class_Database_AssignmentRuleHeader.htm
+	- WORKAROUND: Run it from SOAP API:
+		- https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_header_assignmentruleheader.htm
+		- Example: https://developer.salesforce.com/forums/?id=906F00000008vLTIAY
 	*/		
 }
